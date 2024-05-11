@@ -15,3 +15,18 @@ Steps:
 1. Make the needed changes in the project and compile in Java 11.
 2. Compiled jar file needs to signed.
 3. Copy the signed jar file to src\Micro-Services\tools\decrypt-tool\staging.
+
+## Compiling the decrypt-tool
+### System requirement          
+    1. Updated Linux EL8+
+    2. JAVA/JDK 11
+    3. Good processing compute resources
+    
+### Compile            
+
+```
+    cd /decrypt-tool/
+    mvn -s ~/.m2/settings.xml clean -X --debug
+    mvn -s ~/.m2/settings.xml versions:set -DnewVersion=11.0.0 -X --debug
+    mvn -s ~/.m2/settings.xml package -X --debug
+```
