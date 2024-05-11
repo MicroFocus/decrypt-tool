@@ -2,7 +2,7 @@
 
 Decrypt tool is used in Open Deduplication (ODD). Tools in Micro-Services is upgraded to java 17 except this project.
 
-Decrypt tool is compiled with Java 11 because of the dependency on ODD Java upgrade.Hence, decryt-tool is no longer part of nightly build.
+Decrypt tool is compiled with Java 11 because of the dependency on ODD Java upgrade.Hence, decrypt-tool is no longer part of nightly build.
 The compiled jar file(i.e. converter-tool.jar) is stored under folder "\src\Micro-Services\tools\decrypt-tool\staging" for packaging.
 
 ## Current version
@@ -19,7 +19,7 @@ Steps:
 ## Compiling the decrypt-tool
 ### System requirement          
     1. Updated Linux EL8+
-    2. JAVA/JDK 11
+    2. JAVA/JDK 17
     3. Good processing compute resources
     
 ### Compile            
@@ -27,6 +27,6 @@ Steps:
 ```
     cd /decrypt-tool/
     mvn -s ~/.m2/settings.xml clean -X --debug
-    mvn -s ~/.m2/settings.xml versions:set -DnewVersion=11.0.0 -X --debug
+    mvn -s ~/.m2/settings.xml versions:set -DnewVersion=1.0.0 -X --debug
     mvn -s ~/.m2/settings.xml package -X --debug
 ```

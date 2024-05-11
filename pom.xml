@@ -6,13 +6,13 @@
     <parent>
         <artifactId>dp-tool-master</artifactId>
         <groupId>com.ot.dp.credentials</groupId>
-        <version>11.0.0</version>
+        <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.mf.dp</groupId>
     <artifactId>decrypt-tool</artifactId>
     <description>Converter Tool To Decrypt SSL Private Key</description>
-    <version>11.0</version>
+    <version>1.0</version>
 
     <properties>
         <junit-jupiter-engine.version>5.7.0</junit-jupiter-engine.version>
